@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>emmanuel</title>
+</head>
+<body>
+   <form action="" method="" accept-charset="utf-8">
+      <input class="into" type="text" name="into" id="" />
+      <button type="submit" class="hello">submit</button>
+   </form>
+   <script type="text/javascript" charset="utf-8">
+      function school (examScore) {
+         if (examScore <= 40) {
+            console.log(` your score: $ {
+               examScore
+               } did not meet cut off mark`)
+         } else if (examScore <= 50 && examScore > 40) {
+            console.log(` you scored: $ {
+               examScore
+               } and try harder next time `)
+         } else if (examScore <= 60 && examScore > 50) {
+            console.log(` you scored: $ {
+               examScore
+               } you got a c`)
+         } else if (examScore < 70 && examScore > 60) {
+            console.log(` you scored: $ {
+               examScore
+               } and you got a B`)
+         } else {
+            console.log(` you scored: $ {
+               examScore
+               } and you got an A`)
+         }
+      }
+
+      const hello = document.querySelector(".hello"
+      )
+
+
+
+      hello.addEventListener("click", school(60))
+      const name = document.querySelector(".into")
+
+
+
+      console.log(name.value)
+
+   </script>
+</body>
+</html>

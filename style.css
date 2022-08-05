@@ -1,0 +1,22 @@
+.heading {
+  background-color: green;
+  color: white;
+  text-align: center;
+}
+.radio {
+
+
+  justify-item: center;
+}
+body {
+  align-content: center;
+  margin: auto;
+  width: auto;
+}
+.but {
+  background-color: rgb(19,19,150);
+  color: white;
+  
+  height: 30px;
+  border-block: none;
+}
