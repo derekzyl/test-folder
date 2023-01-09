@@ -5,16 +5,16 @@ class NewDate
         this.date = date;
     }
 
-    getDate()
+    getDate(date)
     {
-        const date = new Date(this.date)
+        const date = new Date(date)
         const hr = date.getHours()
         const min =date.getMinutes()
         const sec =date.getSeconds()
         const milliSec = date.getMilliseconds()
-        const weekDay=  date.getDay()
+        const wkDy=  date.getDay()
         const monthDay = date.getDate()
-        const month = date.getMonth()
+        const mnt = date.getMonth()
         const yr = date.getFullYear()
         const utcMilliSec = date.getUTCMilliseconds()
         const utcSec= date.getUTCSeconds()
@@ -24,6 +24,10 @@ class NewDate
         const utcMonthDay = date.getUTCDate()
         const utcMonth = date.getUTCMonth()
         const utcYr = date.getUTCFullYear()
+        const monh =["january", "february", "march", "april","may","june","july", "august","september", "october","november","december"]
+        const month =monh[mnt]
+        const week= ["monday","tuesday","wednesday","thursdsy","friday","saturday","sunday"]
+        const weekDay=week[wkDy]
         const gotten ={
             hr,min,sec,milliSec,weekDay,monthDay,month,yr,utcMilliSec,utcSec,utcMin,utcHr,utcWeekDay,utcMonthDay,utcMonth,utcYr
         }
