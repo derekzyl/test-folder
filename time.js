@@ -7,7 +7,27 @@ class NewDate
 
     getDate()
     {
-        return this.date;
+        const date = new Date(this.date)
+        const hr = date.getHours()
+        const min =date.getMinutes()
+        const sec =date.getSeconds()
+        const milliSec = date.getMilliseconds()
+        const weekDay=  date.getDay()
+        const monthDay = date.getDate()
+        const month = date.getMonth()
+        const yr = date.getFullYear()
+        const utcMilliSec = date.getUTCMilliseconds()
+        const utcSec= date.getUTCSeconds()
+        const utcMin = date.getUTCMinutes()
+        const utcHr = date.getUTCHours()
+        const utcWeekDay= date.getUTCDay()
+        const utcMonthDay = date.getUTCDate()
+        const utcMonth = date.getUTCMonth()
+        const utcYr = date.getUTCFullYear()
+        const gotten ={
+            hr,min,sec,milliSec,weekDay,monthDay,month,yr,utcMilliSec,utcSec,utcMin,utcHr,utcWeekDay,utcMonthDay,utcMonth,utcYr
+        }
+        return gotten 
     }
 
     setDate(date)
@@ -26,7 +46,7 @@ class NewDate
         * time differnce is meant to calculate differnce 
         * between two time 
         * @param{ timeDiffernce (theFirstDate, TheSecondDate) }
-        * @returns{months, weeks, days, hours, minutes, seconds}
+        * @returns{months, weeks, days, hours, minutes, seconds}}}}}}
         * */
     timeDifference(d1, d2){    
 

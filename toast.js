@@ -16,7 +16,7 @@ function watch() {
    Object.defineProperty(
       this, "diff", {
          get: function() {
-            console.log(time)
+            console.log(time, "timers")
          }
       })
 }
@@ -25,3 +25,4 @@ const t = new watch()
 t.start()
 t.stop()
 t.t()
+t.diff
