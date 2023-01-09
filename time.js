@@ -58,47 +58,46 @@ const b = futureDate.split("")
         if (futureDate.endsWith("s")){
 
             const da = this.setDateChild(futureDate)
-            const d = date.setUTCSeconds(da)
-            return d 
+             date.setUTCSeconds(da)
+            return date
         }
 
 
         if (futureDate.endsWith("m")){
 
             const da = this.setDateChild(futureDate)
-            const d = date.setUTCMinutes(da)
-            return d 
+            date.setUTCMinutes(da)
+            return date
         }
 
         if (futureDate.endsWith("h")){
 
             const da = this.setDateChild(futureDate)
-            const d = date.setUTCHours(da)
-            return d 
+             date.setUTCHours(da)
+            return date
         }
 
 
         if (futureDate.endsWith("D")){
 
             const da = this.setDateChild(futureDate)
-            const d = date.setUTCDate(da)
-            return d 
-        }
+            date.setUTCDate(da)
+            return date        }
 
 
         if (futureDate.endsWith("M")){
 
             const da = this.setDateChild(futureDate)
-            const d = date.setUTCMonth(da)
-            return d 
+             date.setUTCMonth(da)
+            return date
         }
 
 
         if (futureDate.endsWith("Y")){
 
             const da = this.setDateChild(futureDate)
-            const d = date.setUTCFullYear(da)
-            return d 
+             date.setUTCFullYear(da)
+            return date
         }
 
 
@@ -111,42 +110,42 @@ if(!futureDate.includes("U")){
         if (futureDate.endsWith("s")){
 
             const da = this.setDateChild(futureDate)
-            const d = date.setSeconds(da)
-            return d 
+             date.setSeconds(da)
+            return date
         }
 
         if (futureDate.endsWith("m")){
             const da = this.setDateChild(futureDate)
-            const d = date.setMinutes(da) 
-                return d 
+             date.setMinutes(da) 
+                return date
         }
     
     if (futureDate.endsWith("h")){
 
             const da = this.setDateChild(futureDate)
-            const d = date.setHours(da) 
-                return d 
+             date.setHours(da) 
+                return date
     }
 
     if (futureDate.endsWith("D")){
 
             const da = this.setDateChild(futureDate)
-            const d = date.setDate(da) 
-                return d 
+         date.setDate(da) 
+                return date
     }
 
     if (futureDate.endsWith("M")){
 
             const da = this.setDateChild(futureDate)
-            const d = date.setMonth(da) 
-                return d 
+             date.setMonth(da) 
+                return date
     }
 
     if (futureDate.endsWith("Y")){
 
             const da = this.setDateChild(futureDate)
-            const d = date.setFullYear(da) 
-                return d 
+             date.setFullYear(da) 
+                return date
     }
     
     }
