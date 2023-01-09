@@ -1,8 +1,8 @@
 class NewDate
 {
-    constructor(date)
+    constructor()
     {
-        this.date = date;
+    
     }
 
     getDate(date)
@@ -33,12 +33,125 @@ class NewDate
         }
         return gotten 
     }
-
-    setDate(date)
-    {
-        this.date = date;
-
+    setDateChild(futureDate){
+const b = futureDate.split("")
+        if(futureDate.includes("U")){
+            b.pop()
+        }
+        b.pop()
+        const f = b.join("")
+        const ff = parseInt(f)
+        return ff
     }
+
+    setDate(futureDate, dateTime)
+    {let date;
+        if (dateTime){
+         date = new Date(dateTime)}
+        else{
+            date=new Date()
+
+        }
+        if(futureDate.includes("U")){
+
+
+        if (futureDate.endsWith("s")){
+
+            const da = this.setDateChild(futureDate)
+            const d = date.setUTCSeconds(da)
+            return d 
+        }
+
+
+        if (futureDate.endsWith("m")){
+
+            const da = this.setDateChild(futureDate)
+            const d = date.setUTCMinutes(da)
+            return d 
+        }
+
+        if (futureDate.endsWith("h")){
+
+            const da = this.setDateChild(futureDate)
+            const d = date.setUTCHours(da)
+            return d 
+        }
+
+
+        if (futureDate.endsWith("D")){
+
+            const da = this.setDateChild(futureDate)
+            const d = date.setUTCDate(da)
+            return d 
+        }
+
+
+        if (futureDate.endsWith("M")){
+
+            const da = this.setDateChild(futureDate)
+            const d = date.setUTCMonth(da)
+            return d 
+        }
+
+
+        if (futureDate.endsWith("Y")){
+
+            const da = this.setDateChild(futureDate)
+            const d = date.setUTCFullYear(da)
+            return d 
+        }
+
+
+
+
+
+
+        }
+if(!futureDate.includes("U")){
+        if (futureDate.endsWith("s")){
+
+            const da = this.setDateChild(futureDate)
+            const d = date.setSeconds(da)
+            return d 
+        }
+
+        if (futureDate.endsWith("m")){
+            const da = this.setDateChild(futureDate)
+            const d = date.setMinutes(da) 
+                return d 
+        }
+    
+    if (futureDate.endsWith("h")){
+
+            const da = this.setDateChild(futureDate)
+            const d = date.setHours(da) 
+                return d 
+    }
+
+    if (futureDate.endsWith("D")){
+
+            const da = this.setDateChild(futureDate)
+            const d = date.setDate(da) 
+                return d 
+    }
+
+    if (futureDate.endsWith("M")){
+
+            const da = this.setDateChild(futureDate)
+            const d = date.setMonth(da) 
+                return d 
+    }
+
+    if (futureDate.endsWith("Y")){
+
+            const da = this.setDateChild(futureDate)
+            const d = date.setFullYear(da) 
+                return d 
+    }
+    
+    }
+    }
+
     minutes(){
         return this.date.getMinutes();
     }
